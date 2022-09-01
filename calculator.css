@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "digital";
+    src: url(./digital-7/digital-7.ttf);
+    font-weight: "regular";
+}
+
+@font-face {
+    font-family: "lato";
+    src: url(./Lato/Lato-Regular.ttf);
+    font-weight: "regular";
+}
+
+#calculator {  
+    display: inline-block; 
+    position: absolute;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    padding-top: 30px;
+    border-top: 5px solid #727272;
+    background-image: linear-gradient(0deg, #212121, #212121, #212121, #212121, #212121, #212121, #212121,#212121,#212121, #212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#aeaeae);
+    box-shadow: 10px 15px 15px #666, -10px 15px 15px #666;
+}
+
+#logoMain {
+    font-size: 39px;
+    color:white;
+    position:absolute;
+    top: -3.1%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logoSecondary {
+    position: absolute;
+    left:13.5%;
+    top:-1%;
+    color: #ebb81c;
+}
+#logoTernary {
+    position: absolute;
+    right:13%;
+    top:9.5%;
+    color: white;
+}
+
+#twoKay {
+    position: absolute;
+    top: 9.5%;
+    right: 25%;
+    color:#f6c121;
+}
+       
+#display {
+    position: relative;
+    width: 97%;
+    height: 80px;
+    left: 1.5%;
+    margin: 20px 0 40px 0;
+    border-radius: 15px;
+    font-family: "digital";
+    color: black;
+    background-image: linear-gradient(180deg, #c7e1d9, #8fb5a9);
+    border-bottom: 4px solid rgb(80, 80, 80);
+}
+
+#displayNumber {
+    line-height: 80px;
+    font-size: 65px;
+    overflow: auto;
+    text-align: right;
+    margin-left: 5px;
+    margin-right: 35px;
+}
+
+#displaySign {
+    position: absolute;
+    top: -40%;
+    right: 3.5%;
+    width: 20px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#keys {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 82px);
+    grid-template-rows: repeat(5, 52px);
+    justify-content: center;
+    align-content: center;  
+}
+
+#keys button{
+    outline: none;
+    border: 3px solid #212121;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    color:white;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 1px;
+}
+
+.number {
+    background-image: linear-gradient(360deg, #8e8e8e, #9a9a9a);
+}
+.number:hover {
+    background: rgb(207, 207, 207);
+}
+
+.number:active {
+    background: rgb(238, 238, 238);
+}
+
+.sign, #equal, #decimal {
+    background-image: linear-gradient(360deg, #505050, #6c6c6c);
+}
+.sign:hover, #equal:hover, #decimal:hover {
+    background: rgb(207, 207, 207);
+}
+.sign:active, #equal:active, #decimal:active {
+    background: rgb(226, 226, 226);
+}
+
+#logoBtn img {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+}
+
+#logoBtn a {
+    position: relative;
+    display: block;
+    height: 44px;
+}
+
+#logoBtn ,#on, #ce {
+    background-image: linear-gradient(360deg, #c59a18, #ebb81c);
+}
+
+#logoBtn:hover, #on:hover, #ce:hover {
+    background: #f6c121;
+}
+#logoBtn:active,#on:active, #ce:active {
+    background: #ffcd37;
+}
+
+#off {
+    background-image: linear-gradient(360deg, #df0000, #e58b8b);
+}
+
+#off:hover {
+    background: rgb(254, 104, 104);
+}
+#off:active {
+    background: rgb(255, 141, 141);
+}
+    
+
+.multiply {
+    padding-top: 12px;
+}
+
