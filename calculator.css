@@ -13,7 +13,7 @@
 #calculator {  
     display: inline-block; 
     position: absolute;
-    width: 350px;
+    width: 330px;
     border-radius: 15px;
     text-align: center;
     left: 50%;
@@ -24,35 +24,37 @@
     border-top: 5px solid #727272;
     background-image: linear-gradient(0deg, #212121, #212121, #212121, #212121, #212121, #212121, #212121,#212121,#212121, #212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#212121,#aeaeae);
     box-shadow: 10px 15px 15px #666, -10px 15px 15px #666;
+    font-family: lato;
 }
 
 #logoMain {
     font-size: 39px;
     color:white;
     position:absolute;
-    top: -3.1%;
+    top: -3.2%;
     left: 50%;
     transform: translateX(-50%);
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 #logoSecondary {
     position: absolute;
-    left:13.5%;
-    top:-1%;
+    left: 11.7%;
+    top:-0.5%;
     color: #ebb81c;
 }
 #logoTernary {
     position: absolute;
-    right:13%;
-    top:9.5%;
+    right:12.1%;
+    top:9.2%;
     color: white;
 }
 
 #twoKay {
     position: absolute;
-    top: 9.5%;
-    right: 25%;
+    top: 9.2%;
+    right: 23%;
     color:#f6c121;
 }
        
@@ -96,7 +98,7 @@
     align-content: center;  
 }
 
-#keys button{
+#keys button {
     outline: none;
     border: 3px solid #212121;
     border-radius: 15px;
@@ -105,7 +107,7 @@
     color:white;
     text-shadow: 0 0 2px rgb(0, 0, 0);
     cursor: pointer;
-    margin: 1px;
+    margin: 1px; 
 }
 
 .number {
@@ -128,21 +130,20 @@
 .sign:active, #equal:active, #decimal:active {
     background: rgb(226, 226, 226);
 }
-
-#logoBtn img {
-    position: absolute;
-    top: 4px;
-    right: 15px;
+.multiply {
+    padding-top: 12px;
 }
 
-#logoBtn a {
-    position: relative;
-    display: block;
-    height: 44px;
+#logoBtn img {
+    margin: 0 auto;
+    padding-top: 7px;
 }
 
 #logoBtn ,#on, #ce {
     background-image: linear-gradient(360deg, #c59a18, #ebb81c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #logoBtn:hover, #on:hover, #ce:hover {
@@ -154,6 +155,9 @@
 
 #off {
     background-image: linear-gradient(360deg, #df0000, #e58b8b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #off:hover {
@@ -163,8 +167,3 @@
     background: rgb(255, 141, 141);
 }
     
-
-.multiply {
-    padding-top: 12px;
-}
-
